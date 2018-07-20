@@ -44,12 +44,14 @@ c.on('message', async msg => {
      msg.reply('Hey ! Voilà les listes des commandes ! ✅ : ➡ S-help : Affiche la liste des commandes 📜 -- ➡ S-helpEN : Affiche la liste des commandes en Anglais 📜 -- ➡ S-invite : Envoie le lien pour inviter ce bot sur votre serveur ! 🌐 -- ➡ S-support : Envoie le lien du serveur de support --  ➡ Commandes Sondages : 〰 Commencez par mettre au début de votre message en majuscules SONDAGE puis soit **Y/N** ou **2** ou **3** ou **4** ou **5** et + (tapez S-liste pour savoir combien de réactions le bot supporte et quand j\'aurais le temps j\'en rajouterais)〰')
    }
    if(msg.content === 'S-helpEN'){
-     msg.reply('Hey ! This is the commands ! ✅ : ➡ S-help : Affiche the list of commands 📜 -- ➡ S-helpEN : Affiche the list of commands in English 📜 -- ➡ S-invite : Send the link for invite this bot on your server ! 🌐 -- ➡ S-support : Send the link for join the support server -- ➡ Sondage commands : 〰 Start your message in majuscules SONDAGE and is **Y/N** or **2** or **3** or **4** or **5** and + (tap S-liste for know how much reactions the bot support and when i have the time, i will add ! 😁👍)〰')
+     msg.reply('Hey ! This is the commands ! ✅ : ➡ S-help : Show the list of commands 📜 -- ➡ S-helpEN : Show the list of commands in English 📜 -- ➡ S-invite : Send the link for invite this bot on your server ! 🌐 -- ➡ S-support : Send the link for join the support server -- ➡ Sondage commands : 〰 Start your message in majuscules SONDAGE and is **Y/N** or **2** or **3** or **4** or **5** and + (tap S-liste for know how much reactions the bot support and when i have the time, i will add ! 😁👍)〰')
    }
    if(msg.content === 'S-liste'){
-     msg.reply('Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 Pour savoir comment faire : Tapez S-help ou S-help for English.')
+     msg.reply('Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 Pour savoir comment faire : Tapez S-help ou S-helpEN for English.')
    }
    if(msg.content === 'S-support'){
-     msg.reply('Voilà le lien d\'invitation ! : https://discord.gg/fTY82bB ')
+     msg.reply('Voilà le lien d\'invitation ! : https://discord.gg/fTY82bB')
    }
  });
+
+   c.login('NDY3NjUwODc5MjA2NTg4NDI2.DittXQ.QSrwoNBk5GsPPc4F4A8zMGzlTXI')
