@@ -50,6 +50,6 @@ c.on('message', async msg => {
      msg.reply('Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 Pour savoir comment faire : Tapez S-help ou S-help for English.')
    }
    if(msg.content === 'S-support'){
-     msg.reply('Voilà le lien d\'invitation ! : (Non disponible pour le moment, revenez ultiérieurement ! 😁👍)')
+     msg.reply('Voilà le lien d\'invitation ! : https://discord.gg/fTY82bB ')
    }
  });
