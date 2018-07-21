@@ -3,7 +3,7 @@ const c = new Discord.Client()
 
 c.on('ready', function () {
   console.log(`Connecté avec @${c.user.tag} !`)
-  c.user.setActivity('vos sondages et tapez S-help pour les commandes ou S-helpEN for show commands in English' , {type: 'WATCHING'})
+  c.user.setActivity('Tapez S-help et regardez @adriengonz' , {type: 'STREAMING'})
 });
 
 c.on('message', async msg => {
