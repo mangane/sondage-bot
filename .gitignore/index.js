@@ -41,7 +41,7 @@ c.on('message', async msg => {
      msg.reply('Voilà le lien d\'invitaton ! : https://discordapp.com/oauth2/authorize?client_id=467650879206588426&scope=bot&permissions=67456064')
    }
    if(msg.content === 'S-help'){
-   msg.channel.send({embed: {
+     msg.channel.send({embed: {
     color: 3447003,
     author: {
       name: client.user.username,
@@ -82,7 +82,7 @@ c.on('message', async msg => {
 });
    }
    if(msg.content === 'S-helpEN'){
-   msg.channel.send({embed: {
+     msg.channel.send({embed: {
     color: 3447003,
     author: {
       name: client.user.username,
@@ -123,7 +123,7 @@ c.on('message', async msg => {
 });
    }
    if(msg.content === 'S-liste'){
-   message.channel.send({embed: {
+     message.channel.send({embed: {
      color: 00000 ,
      title: "Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 \nPour savoir comment faire : Tapez S-help ou S-helpEN for English."
    }});
