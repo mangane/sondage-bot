@@ -41,13 +41,92 @@ c.on('message', async msg => {
      msg.reply('Voilà le lien d\'invitaton ! : https://discordapp.com/oauth2/authorize?client_id=467650879206588426&scope=bot&permissions=67456064')
    }
    if(msg.content === 'S-help'){
-     msg.reply('Hey ! Voilà les listes des commandes ! ✅ : \n ➡ S-help : Affiche la liste des commandes 📜 \n ➡ S-helpEN : Affiche la liste des commandes en Anglais 📜 \n ➡ S-invite : Envoie le lien pour inviter ce bot sur votre serveur ! 🌐 \n ➡ S-support : Envoie le lien du serveur de support \n ➡ S-createur : Affiche le nom du créateur du bot 👨‍💻 \n ➡ Commandes Sondages : 〰 Commencez par mettre au début de votre message en majuscules SONDAGE puis soit **Y/N** ou **2** ou **3** ou **4** ou **5** et + (tapez S-liste pour savoir combien de réactions le bot supporte et quand j\'aurais le temps j\'en rajouterais)〰')
+   msg.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Hey ! Voilà les listes des commandes ! ✅ :",
+    fields: [{
+        name: "S-help",
+        value: "Affiche la liste des commandes 📜"
+      },
+      {
+        name: "S-helpEN",
+        value: "Affiche la liste des commandes en Anglais 📜"
+      },
+      {
+        name: "S-invite",
+        value: "Envoie le lien pour inviter ce bot sur votre serveur ! 🌐"
+      }
+      {
+        name: "S-support",
+        value: "Envoie le lien du serveur de support"
+      },
+      {
+        name: "S-createur",
+        value: "Affiche le nom du créateur du bot !"
+      },
+      {
+        name: "Commandes Sondages :",
+        value: "Commencez par mettre au début de votre message en majuscules SONDAGE puis soit **Y/N** ou **2** ou **3** ou **4** ou **5** et + (tapez S-liste pour savoir combien de réactions le bot supporte et quand j\'aurais le temps j\'en rajouterais)"
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "©2018 Adri-djay g"
+    }
+  }
+});
    }
    if(msg.content === 'S-helpEN'){
-     msg.reply('Hey ! This is the commands ! ✅ : \n ➡ S-help : Show the list of commands 📜 \n ➡ S-helpEN : Show the list of commands in English 📜 \n ➡ S-invite : Send the link for invite this bot on your server ! 🌐 \n ➡ S-support : Send the link for join the support server \n ➡ S-createur : Show the name of creator of bot 👨‍💻 \n ➡ Sondage commands : 〰 Start your message in majuscules SONDAGE and is **Y/N** or **2** or **3** or **4** or **5** and + (tap S-liste for know how much reactions the bot support and when i have the time, i will add ! 😁👍)〰')
+   msg.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Hey ! This is the commands ! ✅ :",
+    fields: [{
+        name: "S-help",
+        value: "Show the list of commands 📜"
+      },
+      {
+        name: "S-helpEN",
+        value: "Show the list of commands in English 📜"
+      },
+      {
+        name: "S-invite",
+        value: "Send the link for invite this bot on your server ! 🌐"
+      }
+      {
+        name: "S-support",
+        value: "Send the link for join the support server"
+      },
+      {
+        name: "S-createur",
+        value: "Show the name of creator of bot !"
+      },
+      {
+        name: "Sondage commands :",
+        value: "Start your message in majuscules SONDAGE and is **Y/N** or **2** or **3** or **4** or **5** and + (tap S-liste for know how much reactions the bot support and when i have the time, i will add ! 😁👍)"
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "©2018 Adri-djay g"
+    }
+  }
+});
    }
    if(msg.content === 'S-liste'){
-     msg.reply('Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 Pour savoir comment faire : Tapez S-help ou S-helpEN for English.')
+   message.channel.send({embed: {
+     color: 00000 ,
+     title: "Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 \nPour savoir comment faire : Tapez S-help ou S-helpEN for English."
+   }});
    }
    if(msg.content === 'S-support'){
      msg.reply('Voilà le lien d\'invitation ! : https://discord.gg/fTY82bB')
