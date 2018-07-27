@@ -59,7 +59,7 @@ c.on('message', async msg => {
       {
         name: "S-invite",
         value: "Envoie le lien pour inviter ce bot sur votre serveur ! 🌐"
-      }
+      },
       {
         name: "S-support",
         value: "Envoie le lien du serveur de support"
@@ -100,7 +100,7 @@ c.on('message', async msg => {
       {
         name: "S-invite",
         value: "Send the link for invite this bot on your server ! 🌐"
-      }
+      },
       {
         name: "S-support",
         value: "Send the link for join the support server"
