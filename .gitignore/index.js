@@ -136,4 +136,4 @@ c.on('message', async msg => {
    }
  });
 
-   c.login('NDY3NjUwODc5MjA2NTg4NDI2.DittXQ.QSrwoNBk5GsPPc4F4A8zMGzlTXI')
+   c.login(process.env.TOKEN)
