@@ -129,7 +129,7 @@ c.on('message', async msg => {
    }});
    }
    if(msg.content === 'S-support'){
-     msg.reply('Voilà le lien d\'invitation ! : https://discord.gg/fTY82bB')
+     msg.reply('Voilà le lien d\'invitation ! : https://discord.gg/rH24C9m')
    }
    if(msg.content === 'S-createur'){
      msg.reply('Ce bot a été crée par Adrien Gonz**** (Adri-djay g ou Adridu84 sur YouTube)')
