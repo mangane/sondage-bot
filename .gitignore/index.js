@@ -75,7 +75,7 @@ c.on('message', async msg => {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: c.user.avatarURL,
       text: "©2018 Adri-djay g"
     }
   }
@@ -85,8 +85,8 @@ c.on('message', async msg => {
      msg.channel.send({embed: {
     color: 3447003,
     author: {
-      name: client.user.username,
-      icon_url: client.user.avatarURL
+      name: c.user.username,
+      icon_url: c.user.avatarURL
     },
     title: "Hey ! This is the commands ! ✅ :",
     fields: [{
@@ -123,7 +123,7 @@ c.on('message', async msg => {
 });
    }
    if(msg.content === 'S-liste'){
-     message.channel.send({embed: {
+     msg.channel.send({embed: {
      color: 00000 ,
      title: "Le bot peut réagir avec les chiffres de 1 à 5. **Mis à jour le 14/07/2018** ✅🌐 \nPour savoir comment faire : Tapez S-help ou S-helpEN for English."
    }});
