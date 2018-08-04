@@ -76,7 +76,7 @@ c.on('message', async msg => {
     timestamp: new Date(),
     footer: {
       icon_url: c.user.avatarURL,
-      text: "©2018 Adri-djay g"
+      text: "2018 Adri-djay g"
     }
   }
 });
@@ -117,7 +117,7 @@ c.on('message', async msg => {
     timestamp: new Date(),
     footer: {
       icon_url: c.user.avatarURL,
-      text: "©2018 Adri-djay g"
+      text: "2018 Adri-djay g"
     }
   }
 });
