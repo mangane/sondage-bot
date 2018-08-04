@@ -116,7 +116,7 @@ c.on('message', async msg => {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: c.user.avatarURL,
       text: "©2018 Adri-djay g"
     }
   }
