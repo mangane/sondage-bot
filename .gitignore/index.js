@@ -12,30 +12,19 @@ c.on('message', async msg => {
   console.log('--'); //Séparateur
 
   if(msg.content.startsWith('SONDAGE Y/N') || msg.content.startsWith('SONDAGE O/N')){
-      msg.react('✅')
-      msg.react('❌')
+      msg.react('✅').then(msg.react('❌'))
     }
   if(msg.content.startsWith('SONDAGE 2')){
-    msg.react('1⃣')
-    msg.react('2⃣')
+    msg.react('1⃣').then(msg.react('2⃣'))
   }
   if(msg.content.startsWith('SONDAGE 3')){
-    msg.react('1⃣')
-    msg.react('2⃣')
-    msg.react('3⃣')
+    msg.react('1⃣').then(msg.react('2⃣')).then(msg.react('3⃣'))
   }
   if(msg.content.startsWith('SONDAGE 4')){
-    msg.react('1⃣')
-    msg.react('2⃣')
-    msg.react('3⃣')
-    msg.react('4⃣')
+    msg.react('1⃣').then(msg.react('2⃣')).then(msg.react('3⃣')).then(msg.react('4⃣'))
   }
     if(msg.content.startsWith('SONDAGE 5')){
-      msg.react('1⃣')
-      msg.react('2⃣')
-      msg.react('3⃣')
-      msg.react('4⃣')
-      msg.react('5⃣')
+      msg.react('1⃣').then(msg.react('2⃣')).then(msg.react('3⃣')).then(msg.react('4⃣')).then(msg.react('5⃣'))
   }
    if(msg.content === 'S-invite'){
      msg.reply('Voilà le lien d\'invitaton ! : https://discordapp.com/oauth2/authorize?client_id=467650879206588426&scope=bot&permissions=67456064')
